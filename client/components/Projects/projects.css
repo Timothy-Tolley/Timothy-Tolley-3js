@@ -1,0 +1,58 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
+
+.projects-main{
+  font-size: 2rem;
+}
+
+.project-div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+
+.project-header {
+  font-size: 1rem;
+}
+
+.initial-dropdown {
+  font-size: 0.9rem;
+}
+
+.dropdown-sigil {
+  margin-left: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.description-cont {
+  width: 200px;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-size: 0.7rem;
+}
+
+.tech-div {
+  font-size: 0.7rem;
+  width: 200px;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.tech{
+font-size: 0.7rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}

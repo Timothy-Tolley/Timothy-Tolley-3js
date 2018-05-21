@@ -1,0 +1,22 @@
+.headerText {
+  color: white;
+  font-size: 1rem;
+  pointer-events: none;
+}
+.secHeaderText {
+  color: white;
+  font-size: 0.8rem;
+  font-style: italic;
+  pointer-events: none;
+}
+
+.headerContainer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 99;
+  width: 100%;
+  margin-top: 10px;
+  pointer-events: none;
+}
