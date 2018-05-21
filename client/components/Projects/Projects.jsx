@@ -34,6 +34,12 @@ class Projects extends React.Component {
         tech: false,
         description: false,
         link: false
+      },
+      5: {
+        active: false,
+        tech: false,
+        description: false,
+        link: false
       }
 
     }

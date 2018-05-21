@@ -38,12 +38,14 @@ class ThreeD extends Component {
 
     // camera
     const camera = new THREE.PerspectiveCamera(
-      70,
+      60,
       window.innerWidth / window.innerHeight,
       1,
       5000
     )
     camera.position.z = 8
+    camera.position.y = 5
+    camera.position.x = 3
     camera.aspect = window.innerWidth / window.innerHeight
     camera.updateProjectionMatrix()
 

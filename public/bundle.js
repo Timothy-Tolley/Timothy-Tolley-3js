@@ -29923,20 +29923,6 @@ var About = function (_React$Component) {
           { className: 'contact-div' },
           _react2.default.createElement(
             'p',
-            { className: 'contact-content' },
-            _react2.default.createElement(
-              'a',
-              { href: 'mailto: timothytolley@outlook.com', className: 'link' },
-              ' timothytolley@outlook.com '
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            { className: 'contact-content' },
-            '+64 21 1832013'
-          ),
-          _react2.default.createElement(
-            'p',
             { className: 'link contact-content' },
             _react2.default.createElement(
               'a',
@@ -29951,6 +29937,20 @@ var About = function (_React$Component) {
               'a',
               { href: 'https://linkedin.com/in/timothy-tolley', target: '_blank', rel: 'noopener noreferrer', className: 'link contact-content' },
               'Linkedin'
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'contact-content' },
+            '+64 21 1832013'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'contact-content' },
+            _react2.default.createElement(
+              'a',
+              { href: 'mailto: timothytolley@outlook.com', className: 'link' },
+              ' timothytolley@outlook.com '
             )
           )
         )
@@ -30022,7 +30022,7 @@ exports = module.exports = __webpack_require__(68)(false);
 
 
 // module
-exports.push([module.i, ".aboutContainer {\n  position: absolute;\n  bottom: 10%;\n  right: 2%;\n  z-index: 10; }\n\n.about-div {\n  width: 200;\n  font-size: 0.8rem; }\n\n.about-header {\n  font-size: 0.8rem;\n  margin-bottom: 6px;\n  text-align: right; }\n\n.about-header:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.about-content {\n  width: 200px;\n  text-align: justify;\n  text-justify: inter-word;\n  margin-right: 8px;\n  margin-bottom: 4px; }\n\n.contact-div {\n  width: 200px;\n  font-size: 0.8rem; }\n\n.contact-content {\n  font-size: 0.8rem;\n  text-align: right; }\n\n.contact-content:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.cv-link {\n  text-decoration: none;\n  text-align: right;\n  margin-bottom: 5px; }\n", ""]);
+exports.push([module.i, ".aboutContainer {\n  position: absolute;\n  bottom: 10%;\n  right: 2%;\n  z-index: 10; }\n\n.about-div {\n  width: 200;\n  font-size: 0.8rem; }\n\n.about-header {\n  font-size: 0.8rem;\n  margin-bottom: 6px;\n  text-align: right; }\n\n.about-header:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.about-content {\n  width: 200px;\n  text-align: justify;\n  text-justify: inter-word;\n  margin-right: 8px;\n  margin-bottom: 4px; }\n\n.contact-div {\n  width: 200px;\n  font-size: 0.8rem; }\n\n.contact-content {\n  font-size: 0.8rem;\n  text-align: right; }\n\n.contact-content:hover {\n  font-size: 0.82rem; }\n\n.cv-link {\n  text-decoration: none;\n  text-align: right;\n  margin-bottom: 5px; }\n", ""]);
 
 // exports
 
@@ -30197,8 +30197,10 @@ var ThreeD = function (_Component) {
       scene.background = reflectionCube;
 
       // camera
-      var camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 5000);
+      var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 5000);
       camera.position.z = 8;
+      camera.position.y = 5;
+      camera.position.x = 3;
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
 
@@ -119040,6 +119042,12 @@ var Projects = function (_React$Component) {
         tech: false,
         description: false,
         link: false
+      },
+      5: {
+        active: false,
+        tech: false,
+        description: false,
+        link: false
       }
 
     };
@@ -119438,15 +119446,15 @@ var projects = exports.projects = [{
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'CSS Animations'],
   video: 'http://localhost:3000/images/RWR-gif.mp4'
 }, {
-  name: 'BABY?',
-  id: 2,
-  description: "A fullstack Webpage. Built as promotional material for a Short Film - 'Baby?'.",
+  name: 'DELTAGE',
+  id: 5,
+  description: "A fullstack Web Appication built in a week in a team of five. The app's purpose is to uncover cryptocurrency arbitrage opportunities.",
   hosting: 'Heroku',
-  build: 'Build: Timothy Tolley Freelance',
-  design: 'Design: Timothy Tolley Freelance',
-  link: 'https://baby-short.herokuapp.com',
-  tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
-  video: 'http://localhost:3000/images/RWR-gif1.mp4'
+  build: 'Build: Timothy Tolley w/ Adam Kuhn, Maddie Brighouse, Peter Sim, Tyler Griffin',
+  design: 'Design: Combined Effort of the team',
+  link: 'https://deltage.nz',
+  tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'Three.js', 'React-Chart.js'],
+  video: 'http://localhost:3000/images/RWR-gif.mp4'
 }, {
   name: 'THORN TREE LTD',
   id: 3,
@@ -119457,6 +119465,16 @@ var projects = exports.projects = [{
   link: 'https://thorntree.nz',
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
   video: 'http://localhost:3000/images/RWR-gif.mp4'
+}, {
+  name: 'BABY?',
+  id: 2,
+  description: "A fullstack Webpage. Built as promotional material for a Short Film - 'Baby?'.",
+  hosting: 'Heroku',
+  build: 'Build: Timothy Tolley Freelance',
+  design: 'Design: Timothy Tolley Freelance',
+  link: 'https://baby-short.herokuapp.com',
+  tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
+  video: 'http://localhost:3000/images/RWR-gif1.mp4'
 }, {
   name: 'TIMOTHY TOLLEY FREELANCE',
   id: 4,

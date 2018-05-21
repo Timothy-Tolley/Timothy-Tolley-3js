@@ -48,12 +48,6 @@ class About extends React.Component {
           CONTACT
         </p>
         {this.state.contact && <div className = 'contact-div'>
-          <p className = 'contact-content'>
-            <a href = 'mailto: timothytolley@outlook.com' className = 'link'> timothytolley@outlook.com </a>
-          </p>
-          <p className = 'contact-content'>
-            +64 21 1832013
-          </p>
           <p className = 'link contact-content'>
             <a href = 'https://github.com/timothy-tolley' target = '_blank' rel="noopener noreferrer" className = 'link contact-content'>
             Github
@@ -63,6 +57,12 @@ class About extends React.Component {
             <a href = 'https://linkedin.com/in/timothy-tolley' target = '_blank' rel="noopener noreferrer" className = 'link contact-content'>
             Linkedin
             </a>
+          </p>
+          <p className = 'contact-content'>
+            +64 21 1832013
+          </p>
+          <p className = 'contact-content'>
+            <a href = 'mailto: timothytolley@outlook.com' className = 'link'> timothytolley@outlook.com </a>
           </p>
         </div>
         }

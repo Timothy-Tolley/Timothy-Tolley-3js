@@ -11,15 +11,15 @@ export const projects = [
     video: 'http://localhost:3000/images/RWR-gif.mp4'
   },
   {
-    name: 'BABY?',
-    id: 2,
-    description: "A fullstack Webpage. Built as promotional material for a Short Film - 'Baby?'.",
+    name: 'DELTAGE',
+    id: 5,
+    description: "A fullstack Web Appication built in a week in a team of five. The app's purpose is to uncover cryptocurrency arbitrage opportunities.",
     hosting: 'Heroku',
-    build: 'Build: Timothy Tolley Freelance',
-    design: 'Design: Timothy Tolley Freelance',
-    link: 'https://baby-short.herokuapp.com',
-    tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
-    video: 'http://localhost:3000/images/RWR-gif1.mp4'
+    build: 'Build: Timothy Tolley w/ Adam Kuhn, Maddie Brighouse, Peter Sim, Tyler Griffin',
+    design: 'Design: Combined Effort of the team',
+    link: 'https://deltage.nz',
+    tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'Three.js', 'React-Chart.js'],
+    video: 'http://localhost:3000/images/RWR-gif.mp4'
   },
   {
     name: 'THORN TREE LTD',
@@ -31,6 +31,17 @@ export const projects = [
     link: 'https://thorntree.nz',
     tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
     video: 'http://localhost:3000/images/RWR-gif.mp4'
+  },
+  {
+    name: 'BABY?',
+    id: 2,
+    description: "A fullstack Webpage. Built as promotional material for a Short Film - 'Baby?'.",
+    hosting: 'Heroku',
+    build: 'Build: Timothy Tolley Freelance',
+    design: 'Design: Timothy Tolley Freelance',
+    link: 'https://baby-short.herokuapp.com',
+    tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
+    video: 'http://localhost:3000/images/RWR-gif1.mp4'
   },
   {
     name: 'TIMOTHY TOLLEY FREELANCE',
