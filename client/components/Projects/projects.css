@@ -18,41 +18,62 @@
 }
 
 .project-header {
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+
+.project-header:hover{
+  font-size: 0.85rem;
+  font-weight: bold
 }
 
 .initial-dropdown {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .dropdown-sigil {
   margin-left: 4px;
   font-size: 0.8rem;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.dropdown-sigil:hover{
+  font-size: 0.85rem;
+  font-weight: bold
 }
 
 .description-cont {
   width: 200px;
-  margin-left: 8px;
+  margin-left: 10px;
   margin-bottom: 4px;
 }
 
 .description {
-  font-size: 0.7rem;
+  width: 200px;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+  text-align: left;
 }
 
 .tech-div {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   width: 200px;
-  margin-left: 8px;
+  margin-left: 10px;
   margin-bottom: 4px;
 }
 
 .tech{
-font-size: 0.7rem;
+font-size: 0.8rem;
 }
 
 .link {
   text-decoration: none;
   color: white;
+}
+
+.link-content{
+  font-size: 0.8rem;
+  width: 200px;
+  margin-left: 10px;
+  margin-bottom: 4px;
 }

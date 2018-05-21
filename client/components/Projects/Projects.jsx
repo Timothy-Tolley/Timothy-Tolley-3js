@@ -14,26 +14,31 @@ class Projects extends React.Component {
       1: {
         active: false,
         tech: false,
-        description: false
+        description: false,
+        link: false
       },
       2: {
         active: false,
         tech: false,
-        description: false
+        description: false,
+        link: false
       },
       3: {
         active: false,
         tech: false,
-        description: false
+        description: false,
+        link: false
       },
       4: {
         active: false,
         tech: false,
-        description: false
+        description: false,
+        link: false
       }
 
     }
     this.handleTech = this.handleTech.bind(this)
+    this.handleLink = this.handleLink.bind(this)
     this.handleVideo = this.handleVideo.bind(this)
     this.handleDescription = this.handleDescription.bind(this)
   }
@@ -46,7 +51,8 @@ class Projects extends React.Component {
       [id]: {
         active: !this.state[id].active,
         description: this.state[id].description,
-        tech: this.state[id].tech
+        tech: this.state[id].tech,
+        link: this.state[id].link
       }
     })
   }
@@ -57,7 +63,8 @@ class Projects extends React.Component {
       [id]: {
         active: this.state[id].active,
         description: this.state[id].description,
-        tech: !this.state[id].tech
+        tech: !this.state[id].tech,
+        link: this.state[id].link
       }
     })
   }
@@ -68,7 +75,20 @@ class Projects extends React.Component {
       [id]: {
         active: this.state[id].active,
         description: !this.state[id].description,
-        tech: this.state[id].tech
+        tech: this.state[id].tech,
+        link: this.state[id].link
+      }
+    })
+  }
+
+  handleLink (id) {
+    this.setState({
+      ...this.state,
+      [id]: {
+        active: this.state[id].active,
+        description: this.state[id].description,
+        tech: this.state[id].tech,
+        link: !this.state[id].link
       }
     })
   }
@@ -83,7 +103,7 @@ class Projects extends React.Component {
               <p className = 'project-header' onClick = {() => this.handleVideo(project.video, project.id)} > {project.name} </p>
               {this.state[project.id].active && <div className = 'initial-dropdown'>
                 <p className = 'dropdown-sigil' onClick = {() => this.handleDescription(project.id)}>
-            DESCRIPTION
+                  DESCRIPTION
                 </p>
                 {this.state[project.id].description && <div className = 'description-cont'>
                   <p className = 'description'>
@@ -97,11 +117,15 @@ class Projects extends React.Component {
                   </p>
                 </div>
                 }
-                <p className = 'dropdown-sigil link'>
-                  {project.link}
+                <p className = 'dropdown-sigil' onClick = {() => this.handleLink(project.id)}>
+                  LINK
                 </p>
+                {this.state[project.id].link &&
+                <a href = {project.link} target = '_blank' rel="noopener noreferrer" className = 'link link-content'>
+                  {project.link}
+                </a>}
                 <p className = 'dropdown-sigil' onClick = {() => this.handleTech(project.id)}>
-            TECHNOLOGY USED
+                  TECHNOLOGY USED
                 </p>
                 {this.state[project.id].tech && <div className = 'tech-div'>
                   {project.tech.map(techItem => {

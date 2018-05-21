@@ -1,13 +1,15 @@
 .headerText {
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   pointer-events: none;
+  font-weight: lighter;
 }
 .secHeaderText {
   color: white;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-style: italic;
   pointer-events: none;
+  font-weight: lighter;
 }
 
 .headerContainer{

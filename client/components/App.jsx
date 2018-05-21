@@ -1,7 +1,6 @@
 import React from 'react'
-// import Rwr from './Rwr/Rwr'
+import About from './About/About'
 import ThreeD from './ThreeD/ThreeD'
-// import Baby from './Baby/Baby'
 import Header from './Header/Header'
 import Projects from './Projects/Projects'
 
@@ -14,8 +13,7 @@ class App extends React.Component {
         <canvas id = 'myCanvas'>
         </canvas>
         <Projects />
-        {/* <Rwr /> */}
-        {/* <Baby /> */}
+        <About />
       </div>
     )
   }
