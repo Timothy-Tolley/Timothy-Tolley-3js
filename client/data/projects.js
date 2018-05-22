@@ -8,7 +8,7 @@ export const projects = [
     design: 'Design: New Territory Studio',
     link: 'http://rwr-pathfinder.herokuapp.com/',
     tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'CSS Animations'],
-    video: 'http://localhost:3000/gifs/RWR-gif.mp4'
+    video: 'https://timothytolley.com/gifs/RWR-gif.mp4'
   },
   {
     name: 'DELTAGE',
@@ -19,7 +19,7 @@ export const projects = [
     design: 'Design: Combined Effort of the team',
     link: 'https://deltage.nz',
     tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'Three.js', 'React-Chart.js'],
-    video: 'http://localhost:3000/gifs/deltage-gif.mp4'
+    video: 'https://timothytolley.com/gifs/deltage-gif.mp4'
   },
   {
     name: 'THORN TREE LTD',
@@ -30,7 +30,7 @@ export const projects = [
     design: 'Design: Timothy Tolley Freelance',
     link: 'https://thorntree.nz',
     tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
-    video: 'http://localhost:3000/gifs/thorntree-gif.mp4'
+    video: 'https://timothytolley.com/gifs/thorntree-gif.mp4'
   },
   {
     name: 'BABY?',
@@ -41,7 +41,7 @@ export const projects = [
     design: 'Design: Timothy Tolley Freelance',
     link: 'https://baby-short.herokuapp.com',
     tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
-    video: 'http://localhost:3000/gifs/baby-gif.mp4'
+    video: 'https://timothytolley.com/gifs/baby-gif.mp4'
   },
   {
     name: 'TIMOTHY TOLLEY FREELANCE',
@@ -52,6 +52,6 @@ export const projects = [
     design: 'Design: Timothy Tolley Freelance',
     link: 'https://timothytolley.com',
     tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'Three.js', 'CSS Animations'],
-    video: 'http://localhost:3000/gifs/timothytolley-gif.mp4'
+    video: 'https://timothytolley.com/gifs/timothytolley-gif.mp4'
   }
 ]

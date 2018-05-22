@@ -38,7 +38,7 @@
 }
 
 .dropdown-sigil:hover{
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: bold
 }
 
@@ -96,4 +96,79 @@ font-size: 0.7rem;
   opacity: 0.01;
   height: 0;
   transition: all 200ms ease-out;
+}
+
+/* Media */
+
+@media (max-width: 900px) {
+  .projects-main{
+    font-size: 1.5rem;
+  }
+  
+  .project-div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+  
+  .project-header {
+    font-size: 0.7rem;
+  }
+  
+  .project-header:hover{
+    font-size: 0.75rem;
+    font-weight: bold
+  }
+  
+  .initial-dropdown {
+    font-size: 0.6rem;
+  }
+  
+  .dropdown-sigil {
+    margin-left: 4px;
+    font-size: 0.6rem;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  
+  .dropdown-sigil:hover{
+    font-size: 0.65rem;
+    font-weight: bold
+  }
+  
+  .description-cont {
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .description {
+    width: 150px;
+    font-size: 0.6rem;
+    margin-bottom: 2px;
+    text-align: left;
+  }
+  
+  .tech-div {
+    font-size: 0.6rem;
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .tech{
+  font-size: 0.6rem;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .link-content{
+    font-size: 0.6rem;
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
 }
