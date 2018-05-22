@@ -77,3 +77,23 @@ font-size: 0.7rem;
   margin-left: 10px;
   margin-bottom: 4px;
 }
+
+/* transitions */ 
+.initial-enter {
+  opacity: 0.01;
+  height: 0;
+}
+.initial-enter-active {
+  opacity: 1;
+  height: auto;
+  transition: all 200ms ease-out;
+}
+.initial-exit {
+  opacity: 1;
+  height: auto;
+}
+.initial-exit-active {
+  opacity: 0.01;
+  height: 0;
+  transition: all 200ms ease-out;
+}

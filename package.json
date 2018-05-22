@@ -1,7 +1,7 @@
 {
-  "name": "j-lemmon",
+  "name": "timothy-tolley-freelance",
   "version": "1.0.0",
-  "description": "John Lemmon ",
+  "description": "Timothy Tolley Freelance Web Development Portfolio",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Timothy-Tolley/j-lemmon.git"
+    "url": "git+https://github.com/Timothy-Tolley/timothytolley-3js.git"
   },
-  "author": "New Territory w/ Timothy Tolley",
+  "author": "Timothy Tolley",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Timothy-Tolley/j-lemmon/issues"
+    "url": "https://github.com/Timothy-Tolley/timothytolley-3js/issues"
   },
-  "homepage": "https://github.com/Timothy-Tolley/j-lemmon#readme",
+  "homepage": "https://github.com/Timothy-Tolley/timothytolley-3js#readme",
   "babel": {
     "presets": [
       "env",
@@ -38,25 +38,21 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "body-parser": "^1.18.2",
-    "cheerio": "^1.0.0-rc.2",
     "css-loader": "^0.28.10",
     "dotenv": "^5.0.0",
     "express": "^4.16.2",
-    "jsdom": "^11.7.0",
     "node-sass": "^4.7.2",
     "orbit-controls-es6": "^1.0.11",
     "react": "15.6.1",
     "react-dom": "15.6.1",
-    "react-image-gallery": "^0.8.7",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
-    "react-scrollable-anchor": "^0.6.1",
     "react-three-renderer": "^3.2.4",
+    "react-transition-group": "^2.3.1",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
-    "superagent": "^3.8.2",
     "three": "0.86.0",
     "uuid": "^3.2.1",
     "webpack": "^3.10.0"

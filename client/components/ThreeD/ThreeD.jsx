@@ -43,8 +43,8 @@ class ThreeD extends Component {
       1,
       5000
     )
-    camera.position.z = 7
-    camera.position.y = 5
+    camera.position.z = 8
+    camera.position.y = 2
     camera.position.x = 2
     camera.aspect = window.innerWidth / window.innerHeight
     camera.updateProjectionMatrix()
@@ -56,6 +56,8 @@ class ThreeD extends Component {
       canvas: myCanvas,
       preserveDrawingBuffer: true
     })
+    renderer.shadowMap.enabled = true
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap
     renderer.setClearColor('#ffffff')
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(window.innerWidth, window.innerHeight)
@@ -73,13 +75,15 @@ class ThreeD extends Component {
     const light = new THREE.DirectionalLight(0xffffff, 0.7, 600)
     light.position.y = 10
     light.position.x = 10
-    light.position.z = -10
+    // light.position.z = 10
+    light.castShadow = true
     scene.add(light)
     // light 2
-    const light2 = new THREE.PointLight(0xffffff, 1, 600)
+    const light2 = new THREE.PointLight(0xffffff, 0.7, 600)
     light2.position.y = 10
     light2.position.x = -10
     light2.position.z = -10
+    light2.castShadow = true
     scene.add(light2)
     // Ambient Light
     const ambient = new THREE.AmbientLight(0xffffff)
@@ -89,9 +93,9 @@ class ThreeD extends Component {
     window.addEventListener('resize', this.onWindowResize, false)
 
     // regular texture
-    const regMaterial = new THREE.MeshPhongMaterial({color: '#697578', shininess: 100})
+    const regMaterial = new THREE.MeshPhongMaterial({color: '#555F61', shininess: 100})
     const planeMaterial = new THREE.MeshPhongMaterial({color: 'black', shininess: 30})
-    const regScreenMaterial = new THREE.MeshPhongMaterial({color: 'black', shininess: 200})
+    const regScreenMaterial = new THREE.MeshPhongMaterial({color: '#242836', shininess: 200})
 
     // Video texture
     const video = document.createElement('video')
@@ -158,11 +162,14 @@ class ThreeD extends Component {
 
   handlePlane (geometry) {
     this.planeMesh = new THREE.Mesh(geometry, this.planeMaterial)
+    this.planeMesh.receiveShadow = true
     this.scene.add(this.planeMesh)
   }
 
   handleComputer (geometry) {
     this.computerMesh = new THREE.Mesh(geometry, this.regMaterial)
+    this.computerMesh.castShadow = true
+    this.computerMesh.recieveShadow = true
     this.scene.add(this.computerMesh)
   }
 
@@ -174,6 +181,7 @@ class ThreeD extends Component {
       mat = this.regScreenMaterial
     }
     this.screenMesh = new THREE.Mesh(geometry, mat)
+    this.screenMesh.castShadow = true
     this.scene.add(this.screenMesh)
   }
 
