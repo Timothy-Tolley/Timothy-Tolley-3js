@@ -43,9 +43,9 @@ class ThreeD extends Component {
       1,
       5000
     )
-    camera.position.z = 8
+    camera.position.z = 7
     camera.position.y = 5
-    camera.position.x = 3
+    camera.position.x = 2
     camera.aspect = window.innerWidth / window.innerHeight
     camera.updateProjectionMatrix()
 
@@ -70,42 +70,41 @@ class ThreeD extends Component {
     planeloader.load('/models/plane.json', this.handlePlane)
 
     // light1
-    const light = new THREE.DirectionalLight(0xffffff, 1.0, 600)
-    light.position.y = 50
+    const light = new THREE.DirectionalLight(0xffffff, 0.7, 600)
+    light.position.y = 10
     light.position.x = 10
+    light.position.z = -10
     scene.add(light)
     // light 2
-    const light2 = new THREE.PointLight(0xffffff, 1.3, 600)
-    light2.position.y = 50
+    const light2 = new THREE.PointLight(0xffffff, 1, 600)
+    light2.position.y = 10
     light2.position.x = -10
+    light2.position.z = -10
     scene.add(light2)
-    // light 3
-    const light3 = new THREE.PointLight(0xffffff, 1, 600)
-    light3.position.y = 10
-    light3.position.x = 10
-    light3.position.z = 10
-    scene.add(light3)
+    // Ambient Light
+    const ambient = new THREE.AmbientLight(0xffffff)
+    scene.add(ambient)
 
     // window resizing
     window.addEventListener('resize', this.onWindowResize, false)
 
     // regular texture
-    const regMaterial = new THREE.MeshPhongMaterial({color: 'grey', shininess: 100})
+    const regMaterial = new THREE.MeshPhongMaterial({color: '#697578', shininess: 100})
     const planeMaterial = new THREE.MeshPhongMaterial({color: 'black', shininess: 30})
     const regScreenMaterial = new THREE.MeshPhongMaterial({color: 'black', shininess: 200})
 
     // Video texture
     const video = document.createElement('video')
-    video.src = ''
     video.setAttribute('crossorigin', 'anonymous')
     video.load()
     video.play()
     const videoTexture = new THREE.VideoTexture(video)
+    videoTexture.generateMipmaps = false
     videoTexture.minFilter = THREE.LinearFilter
     videoTexture.magFilter = THREE.LinearFilter
     videoTexture.format = THREE.RGBFormat
-    const movieMaterial = new THREE.MeshPhongMaterial({map: videoTexture, overdraw: true, side: THREE.DoubleSide})
-    movieMaterial.map.needsUpdate = true
+    this.movieMaterial = new THREE.MeshPhongMaterial({map: videoTexture, overdraw: true, side: THREE.DoubleSide})
+    this.movieMaterial.map.needsUpdate = true
 
     // controls
     this.controls = new OrbitControls(camera)
@@ -126,7 +125,6 @@ class ThreeD extends Component {
     this.renderer = renderer
     this.regMaterial = regMaterial
     this.planeMaterial = planeMaterial
-    this.movieMaterial = movieMaterial
     this.regScreenMaterial = regScreenMaterial
 
     this.mount.appendChild(this.renderer.domElement)

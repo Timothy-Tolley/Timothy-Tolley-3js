@@ -1,7 +1,7 @@
 .aboutContainer {
   position: absolute;
   bottom: 10%;
-  right: 2%;
+  right: 5%;
   z-index: 10;
 }
 
@@ -11,13 +11,13 @@
 }
 
 .about-header {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   margin-bottom: 6px;
   text-align: right;
 }
 
 .about-header:hover{
-  font-size: 0.85rem;
+  font-size: 1.55rem;
   font-weight: bold
 }
 

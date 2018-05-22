@@ -4,7 +4,7 @@
   z-index: 10;
   position: absolute;
   top: 10%;
-  left: 2%;
+  left: 5%;
 }
 
 .projects-main{
@@ -27,12 +27,12 @@
 }
 
 .initial-dropdown {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .dropdown-sigil {
   margin-left: 4px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-bottom: 6px;
   margin-top: 6px;
 }
@@ -50,20 +50,20 @@
 
 .description {
   width: 200px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-bottom: 2px;
   text-align: left;
 }
 
 .tech-div {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   width: 200px;
   margin-left: 10px;
   margin-bottom: 4px;
 }
 
 .tech{
-font-size: 0.8rem;
+font-size: 0.7rem;
 }
 
 .link {
@@ -72,7 +72,7 @@ font-size: 0.8rem;
 }
 
 .link-content{
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   width: 200px;
   margin-left: 10px;
   margin-bottom: 4px;

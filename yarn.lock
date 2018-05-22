@@ -6888,6 +6888,10 @@ test-exclude@^4.2.1:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
+three-stereo-effect@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/three-stereo-effect/-/three-stereo-effect-1.0.14.tgz#88d4a19b0bd3a0dc375fdd5f5d5d592201c8de7f"
+
 three@0.86.0:
   version "0.86.0"
   resolved "https://registry.yarnpkg.com/three/-/three-0.86.0.tgz#1c33e476a1537e9a8a18f5792d024b1046cd2000"

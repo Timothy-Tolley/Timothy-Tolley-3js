@@ -30022,7 +30022,7 @@ exports = module.exports = __webpack_require__(68)(false);
 
 
 // module
-exports.push([module.i, ".aboutContainer {\n  position: absolute;\n  bottom: 10%;\n  right: 2%;\n  z-index: 10; }\n\n.about-div {\n  width: 200;\n  font-size: 0.8rem; }\n\n.about-header {\n  font-size: 0.8rem;\n  margin-bottom: 6px;\n  text-align: right; }\n\n.about-header:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.about-content {\n  width: 200px;\n  text-align: justify;\n  text-justify: inter-word;\n  margin-right: 8px;\n  margin-bottom: 4px; }\n\n.contact-div {\n  width: 200px;\n  font-size: 0.8rem; }\n\n.contact-content {\n  font-size: 0.8rem;\n  text-align: right; }\n\n.contact-content:hover {\n  font-size: 0.82rem; }\n\n.cv-link {\n  text-decoration: none;\n  text-align: right;\n  margin-bottom: 5px; }\n", ""]);
+exports.push([module.i, ".aboutContainer {\n  position: absolute;\n  bottom: 10%;\n  right: 5%;\n  z-index: 10; }\n\n.about-div {\n  width: 200;\n  font-size: 0.8rem; }\n\n.about-header {\n  font-size: 1.5rem;\n  margin-bottom: 6px;\n  text-align: right; }\n\n.about-header:hover {\n  font-size: 1.55rem;\n  font-weight: bold; }\n\n.about-content {\n  width: 200px;\n  text-align: justify;\n  text-justify: inter-word;\n  margin-right: 8px;\n  margin-bottom: 4px; }\n\n.contact-div {\n  width: 200px;\n  font-size: 0.8rem; }\n\n.contact-content {\n  font-size: 0.8rem;\n  text-align: right; }\n\n.contact-content:hover {\n  font-size: 0.82rem; }\n\n.cv-link {\n  text-decoration: none;\n  text-align: right;\n  margin-bottom: 5px; }\n", ""]);
 
 // exports
 
@@ -30198,9 +30198,9 @@ var ThreeD = function (_Component) {
 
       // camera
       var camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 5000);
-      camera.position.z = 8;
+      camera.position.z = 7;
       camera.position.y = 5;
-      camera.position.x = 3;
+      camera.position.x = 2;
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
 
@@ -30225,42 +30225,41 @@ var ThreeD = function (_Component) {
       planeloader.load('/models/plane.json', this.handlePlane);
 
       // light1
-      var light = new THREE.DirectionalLight(0xffffff, 1.0, 600);
-      light.position.y = 50;
+      var light = new THREE.DirectionalLight(0xffffff, 0.7, 600);
+      light.position.y = 10;
       light.position.x = 10;
+      light.position.z = -10;
       scene.add(light);
       // light 2
-      var light2 = new THREE.PointLight(0xffffff, 1.3, 600);
-      light2.position.y = 50;
+      var light2 = new THREE.PointLight(0xffffff, 1, 600);
+      light2.position.y = 10;
       light2.position.x = -10;
+      light2.position.z = -10;
       scene.add(light2);
-      // light 3
-      var light3 = new THREE.PointLight(0xffffff, 1, 600);
-      light3.position.y = 10;
-      light3.position.x = 10;
-      light3.position.z = 10;
-      scene.add(light3);
+      // Ambient Light
+      var ambient = new THREE.AmbientLight(0xffffff);
+      scene.add(ambient);
 
       // window resizing
       window.addEventListener('resize', this.onWindowResize, false);
 
       // regular texture
-      var regMaterial = new THREE.MeshPhongMaterial({ color: 'grey', shininess: 100 });
+      var regMaterial = new THREE.MeshPhongMaterial({ color: '#697578', shininess: 100 });
       var planeMaterial = new THREE.MeshPhongMaterial({ color: 'black', shininess: 30 });
       var regScreenMaterial = new THREE.MeshPhongMaterial({ color: 'black', shininess: 200 });
 
       // Video texture
       var video = document.createElement('video');
-      video.src = '';
       video.setAttribute('crossorigin', 'anonymous');
       video.load();
       video.play();
       var videoTexture = new THREE.VideoTexture(video);
+      videoTexture.generateMipmaps = false;
       videoTexture.minFilter = THREE.LinearFilter;
       videoTexture.magFilter = THREE.LinearFilter;
       videoTexture.format = THREE.RGBFormat;
-      var movieMaterial = new THREE.MeshPhongMaterial({ map: videoTexture, overdraw: true, side: THREE.DoubleSide });
-      movieMaterial.map.needsUpdate = true;
+      this.movieMaterial = new THREE.MeshPhongMaterial({ map: videoTexture, overdraw: true, side: THREE.DoubleSide });
+      this.movieMaterial.map.needsUpdate = true;
 
       // controls
       this.controls = new _orbitControlsEs2.default(camera);
@@ -30281,7 +30280,6 @@ var ThreeD = function (_Component) {
       this.renderer = renderer;
       this.regMaterial = regMaterial;
       this.planeMaterial = planeMaterial;
-      this.movieMaterial = movieMaterial;
       this.regScreenMaterial = regScreenMaterial;
 
       this.mount.appendChild(this.renderer.domElement);
@@ -118963,7 +118961,7 @@ exports = module.exports = __webpack_require__(68)(false);
 
 
 // module
-exports.push([module.i, ".headerText {\n  color: white;\n  font-size: 2rem;\n  pointer-events: none;\n  font-weight: lighter; }\n\n.secHeaderText {\n  color: white;\n  font-size: 1.5rem;\n  font-style: italic;\n  pointer-events: none;\n  font-weight: lighter; }\n\n.headerContainer {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  z-index: 99;\n  width: 100%;\n  margin-top: 10px;\n  pointer-events: none; }\n", ""]);
+exports.push([module.i, ".headerText {\n  color: white;\n  font-size: 2rem;\n  pointer-events: none;\n  font-weight: lighter; }\n\n.secHeaderText {\n  color: white;\n  font-size: 1.3rem;\n  font-style: italic;\n  pointer-events: none;\n  font-weight: lighter; }\n\n.headerContainer {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  z-index: 99;\n  width: 100%;\n  margin-top: 10px;\n  pointer-events: none; }\n", ""]);
 
 // exports
 
@@ -119420,7 +119418,7 @@ exports = module.exports = __webpack_require__(68)(false);
 
 
 // module
-exports.push([module.i, ".projects-container {\n  display: flex;\n  flex-direction: column;\n  z-index: 10;\n  position: absolute;\n  top: 10%;\n  left: 2%; }\n\n.projects-main {\n  font-size: 2rem; }\n\n.project-div {\n  display: flex;\n  flex-direction: column;\n  padding-bottom: 5px; }\n\n.project-header {\n  font-size: 0.8rem; }\n\n.project-header:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.initial-dropdown {\n  font-size: 0.8rem; }\n\n.dropdown-sigil {\n  margin-left: 4px;\n  font-size: 0.8rem;\n  margin-bottom: 6px;\n  margin-top: 6px; }\n\n.dropdown-sigil:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.description-cont {\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n.description {\n  width: 200px;\n  font-size: 0.8rem;\n  margin-bottom: 2px;\n  text-align: left; }\n\n.tech-div {\n  font-size: 0.8rem;\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n.tech {\n  font-size: 0.8rem; }\n\n.link {\n  text-decoration: none;\n  color: white; }\n\n.link-content {\n  font-size: 0.8rem;\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n", ""]);
+exports.push([module.i, ".projects-container {\n  display: flex;\n  flex-direction: column;\n  z-index: 10;\n  position: absolute;\n  top: 10%;\n  left: 5%; }\n\n.projects-main {\n  font-size: 2rem; }\n\n.project-div {\n  display: flex;\n  flex-direction: column;\n  padding-bottom: 5px; }\n\n.project-header {\n  font-size: 0.8rem; }\n\n.project-header:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.initial-dropdown {\n  font-size: 0.7rem; }\n\n.dropdown-sigil {\n  margin-left: 4px;\n  font-size: 0.7rem;\n  margin-bottom: 6px;\n  margin-top: 6px; }\n\n.dropdown-sigil:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.description-cont {\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n.description {\n  width: 200px;\n  font-size: 0.7rem;\n  margin-bottom: 2px;\n  text-align: left; }\n\n.tech-div {\n  font-size: 0.7rem;\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n.tech {\n  font-size: 0.7rem; }\n\n.link {\n  text-decoration: none;\n  color: white; }\n\n.link-content {\n  font-size: 0.7rem;\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n", ""]);
 
 // exports
 
@@ -119444,7 +119442,7 @@ var projects = exports.projects = [{
   design: 'Design: New Territory Studio',
   link: 'http://rwr.newterritory.studio',
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'CSS Animations'],
-  video: 'http://localhost:3000/images/RWR-gif.mp4'
+  video: 'http://localhost:3000/gifs/RWR-gif.mp4'
 }, {
   name: 'DELTAGE',
   id: 5,
@@ -119454,27 +119452,27 @@ var projects = exports.projects = [{
   design: 'Design: Combined Effort of the team',
   link: 'https://deltage.nz',
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'Three.js', 'React-Chart.js'],
-  video: 'http://localhost:3000/images/RWR-gif.mp4'
+  video: 'http://localhost:3000/gifs/deltage-gif.mp4'
 }, {
   name: 'THORN TREE LTD',
   id: 3,
-  description: 'A fullstack Webpage. Built as a point of contact for Thorn Tree ltd to reach clients.',
+  description: 'A fullstack Webpage. WORK IN PROGRESS Built as a point of contact for Thorn Tree ltd to reach clients.',
   hosting: 'Heroku',
   build: 'Build: Timothy Tolley Freelance',
   design: 'Design: Timothy Tolley Freelance',
   link: 'https://thorntree.nz',
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
-  video: 'http://localhost:3000/images/RWR-gif.mp4'
+  video: 'http://localhost:3000/gifs/RWR-gif.mp4'
 }, {
   name: 'BABY?',
   id: 2,
-  description: "A fullstack Webpage. Built as promotional material for a Short Film - 'Baby?'.",
+  description: "A fullstack Webpage. WORK IN PROGRESS. Built as promotional material for a Short Film - 'Baby?'.",
   hosting: 'Heroku',
   build: 'Build: Timothy Tolley Freelance',
   design: 'Design: Timothy Tolley Freelance',
   link: 'https://baby-short.herokuapp.com',
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
-  video: 'http://localhost:3000/images/RWR-gif1.mp4'
+  video: 'http://localhost:3000/gifs/baby-gif.mp4'
 }, {
   name: 'TIMOTHY TOLLEY FREELANCE',
   id: 4,
@@ -119484,7 +119482,7 @@ var projects = exports.projects = [{
   design: 'Design: Timothy Tolley Freelance',
   link: 'https://timothytolley.com',
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'Three.js', 'CSS Animations'],
-  video: 'http://localhost:3000/images/RWR-gif.mp4'
+  video: 'http://localhost:3000/gifs/RWR-gif.mp4'
 }];
 
 /***/ })
