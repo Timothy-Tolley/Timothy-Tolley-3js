@@ -22,3 +22,9 @@
   margin-top: 10px;
   pointer-events: none;
 }
+
+@media (max-width: 450px) {
+  .headerContainer{
+    position: relative;
+  }
+}

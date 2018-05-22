@@ -41,6 +41,10 @@
   font-size: 0.75rem;
   font-weight: bold
 }
+ 
+.desciption-gif {
+  display: none;
+}
 
 .description-cont {
   width: 200px;
@@ -168,6 +172,65 @@ font-size: 0.7rem;
   .link-content{
     font-size: 0.6rem;
     width: 150px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 450px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    padding: 4px;
+  }
+
+  .project-div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .description-cont {
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .desciption-gif {
+    display: block;
+    width: 200px;
+  }
+
+  .description {
+    width: 300px;
+    font-size: 0.6rem;
+    margin-bottom: 2px;
+    text-align: left;
+  }
+  
+  .tech-div {
+    font-size: 0.6rem;
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .tech{
+  font-size: 0.6rem;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .link-content{
+    font-size: 0.6rem;
+    width: 300px;
     margin-left: 10px;
     margin-bottom: 4px;
   }

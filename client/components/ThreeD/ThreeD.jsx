@@ -3,6 +3,8 @@ import {connect} from 'react-redux'
 import React, {Component} from 'react'
 import OrbitControls from 'orbit-controls-es6'
 
+import './threed.css'
+
 class ThreeD extends Component {
   constructor (props) {
     super(props)

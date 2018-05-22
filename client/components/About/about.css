@@ -123,3 +123,58 @@
     margin-bottom: 5px;
   }
 }  
+
+@media (max-width: 450px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    left: 0%;
+    top: 0%;
+    padding: 4px;
+  }
+  .about-div {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  
+  .about-header {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+  
+  .about-header:hover{
+    font-size: 1.35rem;
+    font-weight: bold
+  }
+  
+  .about-content {
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 0px;
+    margin-bottom: 4px;
+  }
+  
+  .contact-div {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  
+  .contact-content {
+    font-size: 0.7rem;
+    text-align: right;
+  }
+  
+  .contact-content:hover{
+    font-size: 0.72rem;
+  }
+  
+  .cv-link {
+    text-decoration: none;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+}

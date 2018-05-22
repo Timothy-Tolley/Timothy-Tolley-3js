@@ -36,3 +36,11 @@ body {
   height: 100%;
   
 }
+
+@media (max-width: 450px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    position: relative
+  }
+}
