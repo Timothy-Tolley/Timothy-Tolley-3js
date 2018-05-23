@@ -8,7 +8,10 @@
 }
 
 .projects-main{
-  font-size: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  margin-bottom: 10px;
 }
 
 .project-div {
@@ -18,12 +21,13 @@
 }
 
 .project-header {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 
 .project-header:hover{
-  font-size: 0.85rem;
-  font-weight: bold
+  font-weight: bold;
+  color: orange;
 }
 
 .initial-dropdown {
@@ -38,8 +42,8 @@
 }
 
 .dropdown-sigil:hover{
-  font-size: 0.75rem;
-  font-weight: bold
+  font-weight: bold;
+  color: orange;
 }
  
 .desciption-gif {
@@ -73,6 +77,11 @@ font-size: 0.7rem;
 .link {
   text-decoration: none;
   color: white;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: orange;
 }
 
 .link-content{

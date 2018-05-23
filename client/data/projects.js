@@ -1,6 +1,6 @@
 export const projects = [
   {
-    name: 'RETAIL PATH FINDER',
+    name: 'Retail Path Finder',
     id: 1,
     description: 'A fullstack JavaScript based interactive web application. Find your career path from retail worker to CEO. A fully customisable framework that can be easily customised to suit any click through path finding application.',
     hosting: 'Heroku',
@@ -11,7 +11,7 @@ export const projects = [
     video: '/gifs/RWR-gif.mp4'
   },
   {
-    name: 'DELTAGE',
+    name: 'Deltage',
     id: 2,
     description: "A fullstack Web Appication built in a week in a team of five. The app's purpose is to uncover cryptocurrency arbitrage opportunities. Login: deltage, Password: delta",
     hosting: 'Heroku',
@@ -22,7 +22,7 @@ export const projects = [
     video: '/gifs/deltage-gif.mp4'
   },
   {
-    name: 'THORN TREE LTD',
+    name: 'Thorn Tree Ltd',
     id: 3,
     description: 'A fullstack Webpage. WORK IN PROGRESS Built as a point of contact for Thorn Tree ltd to reach clients.',
     hosting: 'Heroku',
@@ -33,7 +33,7 @@ export const projects = [
     video: '/gifs/thorntree-gif.mp4'
   },
   {
-    name: 'BABY?',
+    name: 'Baby?',
     id: 4,
     description: "A fullstack Webpage. WORK IN PROGRESS. Built as promotional material for a Short Film - 'Baby?'.",
     hosting: 'Heroku',
@@ -44,7 +44,7 @@ export const projects = [
     video: '/gifs/baby-gif.mp4'
   },
   {
-    name: 'TIMOTHY TOLLEY FREELANCE',
+    name: 'Timothy Tolley Freelance',
     id: 5,
     description: 'A fullstack Web Appication utilising Three.js. Built as a point of contact for Timothy Tolley Freelance to reach clients and show off what we can do for you.',
     hosting: 'Heroku',

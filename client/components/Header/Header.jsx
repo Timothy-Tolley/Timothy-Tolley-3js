@@ -10,7 +10,7 @@ class Header extends React.Component {
           TIMOTHY TOLLEY
         </h1>
         <h1 className = 'secHeaderText'>
-          FREELANCE WEB DEVELOPMENT
+          freelance web development
         </h1>
       </div>
     )

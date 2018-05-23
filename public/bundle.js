@@ -31605,7 +31605,7 @@ exports = module.exports = __webpack_require__(39)(false);
 
 
 // module
-exports.push([module.i, ".aboutContainer {\n  position: absolute;\n  bottom: 10%;\n  right: 5%;\n  z-index: 10; }\n\n.about-div {\n  width: 200px;\n  font-size: 0.8rem; }\n\n.about-header {\n  font-size: 1.5rem;\n  margin-bottom: 6px;\n  text-align: right; }\n\n.about-header:hover {\n  font-size: 1.55rem;\n  font-weight: bold; }\n\n.about-content {\n  width: 200px;\n  text-align: justify;\n  text-justify: inter-word;\n  margin-right: 8px;\n  margin-bottom: 4px; }\n\n.contact-div {\n  width: 200px;\n  font-size: 0.8rem; }\n\n.contact-content {\n  font-size: 0.8rem;\n  text-align: right; }\n\n.contact-content:hover {\n  font-size: 0.82rem; }\n\n.cv-link {\n  text-decoration: none;\n  text-align: right;\n  margin-bottom: 5px; }\n\n/* transitions */\n.open-enter {\n  opacity: 0.01;\n  height: 0; }\n\n.open-enter-active {\n  opacity: 1;\n  height: auto;\n  transition: all 200ms ease-out; }\n\n.open-exit {\n  opacity: 0;\n  height: auto; }\n\n.open-exit-active {\n  opacity: 0.01;\n  height: 0;\n  transition: all 200ms ease-out; }\n\n/* media */\n@media (max-width: 900px) {\n  .aboutContainer {\n    position: absolute;\n    bottom: 10%;\n    right: 5%;\n    z-index: 10; }\n  .about-div {\n    width: 150px;\n    font-size: 0.8rem; }\n  .about-header {\n    font-size: 1.3rem;\n    margin-bottom: 6px;\n    text-align: right; }\n  .about-header:hover {\n    font-size: 1.35rem;\n    font-weight: bold; }\n  .about-content {\n    width: 150px;\n    text-align: justify;\n    text-justify: inter-word;\n    margin-right: 8px;\n    margin-bottom: 4px; }\n  .contact-div {\n    width: 150px;\n    font-size: 0.7rem; }\n  .contact-content {\n    font-size: 0.7rem;\n    text-align: right; }\n  .contact-content:hover {\n    font-size: 0.72rem; }\n  .cv-link {\n    text-decoration: none;\n    text-align: right;\n    margin-bottom: 5px; } }\n\n@media (max-width: 450px) {\n  .aboutContainer {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    width: 90%;\n    left: 0%;\n    top: 0%;\n    padding: 4px; }\n  .about-div {\n    width: 100%;\n    font-size: 0.8rem; }\n  .about-header {\n    font-size: 1.3rem;\n    margin-bottom: 6px;\n    text-align: left; }\n  .about-header:hover {\n    font-size: 1.35rem;\n    font-weight: bold; }\n  .about-content {\n    width: 100%;\n    text-align: justify;\n    text-justify: inter-word;\n    margin-right: 0px;\n    margin-bottom: 4px; }\n  .contact-div {\n    width: 100%;\n    font-size: 0.7rem; }\n  .contact-content {\n    font-size: 0.7rem;\n    text-align: right; }\n  .contact-content:hover {\n    font-size: 0.72rem; }\n  .cv-link {\n    text-decoration: none;\n    text-align: right;\n    margin-bottom: 5px; } }\n", ""]);
+exports.push([module.i, ".aboutContainer {\n  position: absolute;\n  bottom: 10%;\n  right: 5%;\n  z-index: 10; }\n\n.about-div {\n  width: 200px;\n  font-size: 0.8rem; }\n\n.about-header {\n  font-size: 1.3rem;\n  margin-bottom: 6px;\n  letter-spacing: 0.0625em;\n  text-align: right; }\n\n.about-header:hover {\n  font-weight: 700; }\n\n.about-content {\n  width: 200px;\n  text-align: justify;\n  text-justify: inter-word;\n  margin-right: 8px;\n  margin-bottom: 4px; }\n\n.contact-div {\n  width: 200px;\n  font-size: 0.8rem; }\n\n.contact-content {\n  font-size: 0.8rem;\n  text-align: right; }\n\n.contact-content:hover {\n  font-weight: bold;\n  color: orange; }\n\n.cv-link {\n  text-decoration: none;\n  text-align: right;\n  margin-bottom: 5px; }\n\n/* transitions */\n.open-enter {\n  opacity: 0.01;\n  height: 0; }\n\n.open-enter-active {\n  opacity: 1;\n  height: auto;\n  transition: all 200ms ease-out; }\n\n.open-exit {\n  opacity: 0;\n  height: auto; }\n\n.open-exit-active {\n  opacity: 0.01;\n  height: 0;\n  transition: all 200ms ease-out; }\n\n/* media */\n@media (max-width: 900px) {\n  .aboutContainer {\n    position: absolute;\n    bottom: 10%;\n    right: 5%;\n    z-index: 10; }\n  .about-div {\n    width: 150px;\n    font-size: 0.8rem; }\n  .about-header {\n    font-size: 1.3rem;\n    margin-bottom: 6px;\n    text-align: right; }\n  .about-header:hover {\n    font-size: 1.35rem;\n    font-weight: 700; }\n  .about-content {\n    width: 150px;\n    text-align: justify;\n    text-justify: inter-word;\n    margin-right: 8px;\n    margin-bottom: 4px; }\n  .contact-div {\n    width: 150px;\n    font-size: 0.7rem; }\n  .contact-content {\n    font-size: 0.7rem;\n    text-align: right; }\n  .contact-content:hover {\n    font-size: 0.72rem; }\n  .cv-link {\n    text-decoration: none;\n    text-align: right;\n    margin-bottom: 5px; } }\n\n@media (max-width: 450px) {\n  .aboutContainer {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    width: 90%;\n    left: 0%;\n    top: 0%;\n    padding: 4px; }\n  .about-div {\n    width: 100%;\n    font-size: 0.8rem; }\n  .about-header {\n    font-size: 1.3rem;\n    margin-bottom: 6px;\n    text-align: left; }\n  .about-header:hover {\n    font-size: 1.35rem;\n    font-weight: 700; }\n  .about-content {\n    width: 100%;\n    text-align: justify;\n    text-justify: inter-word;\n    margin-right: 0px;\n    margin-bottom: 4px; }\n  .contact-div {\n    width: 100%;\n    font-size: 0.7rem; }\n  .contact-content {\n    font-size: 0.7rem;\n    text-align: right; }\n  .contact-content:hover {\n    font-size: 0.72rem; }\n  .cv-link {\n    text-decoration: none;\n    text-align: right;\n    margin-bottom: 5px; } }\n", ""]);
 
 // exports
 
@@ -120548,7 +120548,7 @@ var Header = function (_React$Component) {
         _react2.default.createElement(
           'h1',
           { className: 'secHeaderText' },
-          'FREELANCE WEB DEVELOPMENT'
+          'freelance web development'
         )
       );
     }
@@ -120618,7 +120618,7 @@ exports = module.exports = __webpack_require__(39)(false);
 
 
 // module
-exports.push([module.i, ".headerText {\n  color: white;\n  font-size: 2rem;\n  pointer-events: none;\n  font-weight: lighter; }\n\n.secHeaderText {\n  color: white;\n  font-size: 1.3rem;\n  font-style: italic;\n  pointer-events: none;\n  font-weight: lighter; }\n\n.headerContainer {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  z-index: 99;\n  width: 100%;\n  margin-top: 10px;\n  pointer-events: none; }\n\n@media (max-width: 450px) {\n  .headerContainer {\n    position: relative; } }\n", ""]);
+exports.push([module.i, ".headerText {\n  color: white;\n  font-size: 1.7rem;\n  letter-spacing: 0.0625em;\n  pointer-events: none;\n  font-weight: 700; }\n\n.secHeaderText {\n  color: white;\n  font-size: 0.8rem;\n  pointer-events: none;\n  font-weight: 400; }\n\n.headerContainer {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  z-index: 99;\n  width: 100%;\n  margin-top: 10px;\n  pointer-events: none; }\n\n@media (max-width: 450px) {\n  .headerContainer {\n    position: relative; } }\n", ""]);
 
 // exports
 
@@ -120827,7 +120827,7 @@ var Projects = function (_React$Component) {
                       { className: 'description' },
                       project.design
                     ),
-                    _react2.default.createElement('video', { src: project.video, className: 'desciption-gif', autoPlay: window.innerWidth < 450, playsinline: true })
+                    _react2.default.createElement('video', { src: project.video, className: 'desciption-gif', autoPlay: window.innerWidth < 450, playsInline: true })
                   )
                 ),
                 _react2.default.createElement(
@@ -121114,7 +121114,7 @@ exports = module.exports = __webpack_require__(39)(false);
 
 
 // module
-exports.push([module.i, ".projects-container {\n  display: flex;\n  flex-direction: column;\n  z-index: 10;\n  position: absolute;\n  top: 10%;\n  left: 5%; }\n\n.projects-main {\n  font-size: 2rem; }\n\n.project-div {\n  display: flex;\n  flex-direction: column;\n  padding-bottom: 5px; }\n\n.project-header {\n  font-size: 0.8rem; }\n\n.project-header:hover {\n  font-size: 0.85rem;\n  font-weight: bold; }\n\n.initial-dropdown {\n  font-size: 0.7rem; }\n\n.dropdown-sigil {\n  margin-left: 4px;\n  font-size: 0.7rem;\n  margin-bottom: 6px;\n  margin-top: 6px; }\n\n.dropdown-sigil:hover {\n  font-size: 0.75rem;\n  font-weight: bold; }\n\n.desciption-gif {\n  display: none; }\n\n.description-cont {\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n.description {\n  width: 200px;\n  font-size: 0.7rem;\n  margin-bottom: 2px;\n  text-align: left; }\n\n.tech-div {\n  font-size: 0.7rem;\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n.tech {\n  font-size: 0.7rem; }\n\n.link {\n  text-decoration: none;\n  color: white; }\n\n.link-content {\n  font-size: 0.7rem;\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n/* transitions */\n.initial-enter {\n  opacity: 0.01;\n  height: 0; }\n\n.initial-enter-active {\n  opacity: 1;\n  height: auto;\n  transition: all 200ms ease-out; }\n\n.initial-exit {\n  opacity: 1;\n  height: auto; }\n\n.initial-exit-active {\n  opacity: 0.01;\n  height: 0;\n  transition: all 200ms ease-out; }\n\n/* Media */\n@media (max-width: 900px) {\n  .projects-main {\n    font-size: 1.5rem; }\n  .project-div {\n    display: flex;\n    flex-direction: column;\n    padding-bottom: 5px; }\n  .project-header {\n    font-size: 0.7rem; }\n  .project-header:hover {\n    font-size: 0.75rem;\n    font-weight: bold; }\n  .initial-dropdown {\n    font-size: 0.6rem; }\n  .dropdown-sigil {\n    margin-left: 4px;\n    font-size: 0.6rem;\n    margin-bottom: 6px;\n    margin-top: 6px; }\n  .dropdown-sigil:hover {\n    font-size: 0.65rem;\n    font-weight: bold; }\n  .description-cont {\n    width: 150px;\n    margin-left: 10px;\n    margin-bottom: 4px; }\n  .description {\n    width: 150px;\n    font-size: 0.6rem;\n    margin-bottom: 2px;\n    text-align: left; }\n  .tech-div {\n    font-size: 0.6rem;\n    width: 150px;\n    margin-left: 10px;\n    margin-bottom: 4px; }\n  .tech {\n    font-size: 0.6rem; }\n  .link {\n    text-decoration: none;\n    color: white; }\n  .link-content {\n    font-size: 0.6rem;\n    width: 150px;\n    margin-left: 10px;\n    margin-bottom: 4px; } }\n\n@media (max-width: 450px) {\n  .projects-container {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    left: 0%;\n    top: 0%;\n    padding: 4px; }\n  .project-div {\n    display: flex;\n    flex-direction: column;\n    padding-bottom: 5px;\n    margin-left: 10px; }\n  .description-cont {\n    width: 300px;\n    margin-left: 10px;\n    margin-bottom: 4px; }\n  .desciption-gif {\n    display: block;\n    width: 200px; }\n  .description {\n    width: 300px;\n    font-size: 0.6rem;\n    margin-bottom: 2px;\n    text-align: left; }\n  .tech-div {\n    font-size: 0.6rem;\n    width: 300px;\n    margin-left: 10px;\n    margin-bottom: 4px; }\n  .tech {\n    font-size: 0.6rem; }\n  .link {\n    text-decoration: none;\n    color: white; }\n  .link-content {\n    font-size: 0.6rem;\n    width: 300px;\n    margin-left: 10px;\n    margin-bottom: 4px; } }\n", ""]);
+exports.push([module.i, ".projects-container {\n  display: flex;\n  flex-direction: column;\n  z-index: 10;\n  position: absolute;\n  top: 10%;\n  left: 5%; }\n\n.projects-main {\n  font-size: 1.3rem;\n  font-weight: 700;\n  letter-spacing: 0.0625em;\n  margin-bottom: 10px; }\n\n.project-div {\n  display: flex;\n  flex-direction: column;\n  padding-bottom: 5px; }\n\n.project-header {\n  font-size: 0.9rem;\n  font-weight: normal; }\n\n.project-header:hover {\n  font-weight: bold;\n  color: orange; }\n\n.initial-dropdown {\n  font-size: 0.7rem; }\n\n.dropdown-sigil {\n  margin-left: 4px;\n  font-size: 0.7rem;\n  margin-bottom: 6px;\n  margin-top: 6px; }\n\n.dropdown-sigil:hover {\n  font-weight: bold;\n  color: orange; }\n\n.desciption-gif {\n  display: none; }\n\n.description-cont {\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n.description {\n  width: 200px;\n  font-size: 0.7rem;\n  margin-bottom: 2px;\n  text-align: left; }\n\n.tech-div {\n  font-size: 0.7rem;\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n.tech {\n  font-size: 0.7rem; }\n\n.link {\n  text-decoration: none;\n  color: white; }\n\n.link:hover {\n  font-weight: bold;\n  color: orange; }\n\n.link-content {\n  font-size: 0.7rem;\n  width: 200px;\n  margin-left: 10px;\n  margin-bottom: 4px; }\n\n/* transitions */\n.initial-enter {\n  opacity: 0.01;\n  height: 0; }\n\n.initial-enter-active {\n  opacity: 1;\n  height: auto;\n  transition: all 200ms ease-out; }\n\n.initial-exit {\n  opacity: 1;\n  height: auto; }\n\n.initial-exit-active {\n  opacity: 0.01;\n  height: 0;\n  transition: all 200ms ease-out; }\n\n/* Media */\n@media (max-width: 900px) {\n  .projects-main {\n    font-size: 1.5rem; }\n  .project-div {\n    display: flex;\n    flex-direction: column;\n    padding-bottom: 5px; }\n  .project-header {\n    font-size: 0.7rem; }\n  .project-header:hover {\n    font-size: 0.75rem;\n    font-weight: bold; }\n  .initial-dropdown {\n    font-size: 0.6rem; }\n  .dropdown-sigil {\n    margin-left: 4px;\n    font-size: 0.6rem;\n    margin-bottom: 6px;\n    margin-top: 6px; }\n  .dropdown-sigil:hover {\n    font-size: 0.65rem;\n    font-weight: bold; }\n  .description-cont {\n    width: 150px;\n    margin-left: 10px;\n    margin-bottom: 4px; }\n  .description {\n    width: 150px;\n    font-size: 0.6rem;\n    margin-bottom: 2px;\n    text-align: left; }\n  .tech-div {\n    font-size: 0.6rem;\n    width: 150px;\n    margin-left: 10px;\n    margin-bottom: 4px; }\n  .tech {\n    font-size: 0.6rem; }\n  .link {\n    text-decoration: none;\n    color: white; }\n  .link-content {\n    font-size: 0.6rem;\n    width: 150px;\n    margin-left: 10px;\n    margin-bottom: 4px; } }\n\n@media (max-width: 450px) {\n  .projects-container {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    left: 0%;\n    top: 0%;\n    padding: 4px; }\n  .project-div {\n    display: flex;\n    flex-direction: column;\n    padding-bottom: 5px;\n    margin-left: 10px; }\n  .description-cont {\n    width: 300px;\n    margin-left: 10px;\n    margin-bottom: 4px; }\n  .desciption-gif {\n    display: block;\n    width: 200px; }\n  .description {\n    width: 300px;\n    font-size: 0.6rem;\n    margin-bottom: 2px;\n    text-align: left; }\n  .tech-div {\n    font-size: 0.6rem;\n    width: 300px;\n    margin-left: 10px;\n    margin-bottom: 4px; }\n  .tech {\n    font-size: 0.6rem; }\n  .link {\n    text-decoration: none;\n    color: white; }\n  .link-content {\n    font-size: 0.6rem;\n    width: 300px;\n    margin-left: 10px;\n    margin-bottom: 4px; } }\n", ""]);
 
 // exports
 
@@ -121130,7 +121130,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var projects = exports.projects = [{
-  name: 'RETAIL PATH FINDER',
+  name: 'Retail Path Finder',
   id: 1,
   description: 'A fullstack JavaScript based interactive web application. Find your career path from retail worker to CEO. A fully customisable framework that can be easily customised to suit any click through path finding application.',
   hosting: 'Heroku',
@@ -121140,7 +121140,7 @@ var projects = exports.projects = [{
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'CSS Animations'],
   video: '/gifs/RWR-gif.mp4'
 }, {
-  name: 'DELTAGE',
+  name: 'Deltage',
   id: 2,
   description: "A fullstack Web Appication built in a week in a team of five. The app's purpose is to uncover cryptocurrency arbitrage opportunities. Login: deltage, Password: delta",
   hosting: 'Heroku',
@@ -121150,7 +121150,7 @@ var projects = exports.projects = [{
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'Three.js', 'React-Chart.js'],
   video: '/gifs/deltage-gif.mp4'
 }, {
-  name: 'THORN TREE LTD',
+  name: 'Thorn Tree Ltd',
   id: 3,
   description: 'A fullstack Webpage. WORK IN PROGRESS Built as a point of contact for Thorn Tree ltd to reach clients.',
   hosting: 'Heroku',
@@ -121160,7 +121160,7 @@ var projects = exports.projects = [{
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
   video: '/gifs/thorntree-gif.mp4'
 }, {
-  name: 'BABY?',
+  name: 'Baby?',
   id: 4,
   description: "A fullstack Webpage. WORK IN PROGRESS. Built as promotional material for a Short Film - 'Baby?'.",
   hosting: 'Heroku',
@@ -121170,7 +121170,7 @@ var projects = exports.projects = [{
   tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript'],
   video: '/gifs/baby-gif.mp4'
 }, {
-  name: 'TIMOTHY TOLLEY FREELANCE',
+  name: 'Timothy Tolley Freelance',
   id: 5,
   description: 'A fullstack Web Appication utilising Three.js. Built as a point of contact for Timothy Tolley Freelance to reach clients and show off what we can do for you.',
   hosting: 'Heroku',
