@@ -30732,20 +30732,35 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
 
-  function App() {
+  function App(props) {
     _classCallCheck(this, App);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+    _this.state = {
+      large: true
+    };
+    return _this;
   }
 
   _createClass(App, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      if (window.innerWidth < 450) {
+        this.setState({
+          large: false
+        });
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
+      window.addEventListener('resize', this.updateSize);
       return _react2.default.createElement(
         'div',
         { className: 'page' },
         _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_ThreeD2.default, null),
+        this.state.large && _react2.default.createElement(_ThreeD2.default, null),
         _react2.default.createElement('canvas', { id: 'myCanvas' }),
         _react2.default.createElement(_Projects2.default, null),
         _react2.default.createElement(_About2.default, null)
@@ -120812,7 +120827,7 @@ var Projects = function (_React$Component) {
                       { className: 'description' },
                       project.design
                     ),
-                    _react2.default.createElement('video', { src: project.video, className: 'desciption-gif', autoPlay: window.innerWidth < 450 })
+                    _react2.default.createElement('video', { src: project.video, className: 'desciption-gif', autoPlay: window.innerWidth < 450, playsinline: true })
                   )
                 ),
                 _react2.default.createElement(

@@ -5,11 +5,28 @@ import Header from './Header/Header'
 import Projects from './Projects/Projects'
 
 class App extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      large: true
+    }
+  }
+
+  componentDidMount () {
+    if (window.innerWidth < 450) {
+      this.setState({
+        large: false
+      })
+    }
+  }
+
   render () {
+    window.addEventListener('resize', this.updateSize)
     return (
       <div className = 'page'>
         <Header />
-        <ThreeD />
+        {this.state.large &&
+        <ThreeD />}
         <canvas id = 'myCanvas'>
         </canvas>
         <Projects />
