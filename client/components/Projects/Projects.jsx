@@ -134,7 +134,7 @@ class Projects extends React.Component {
                       <p className = 'description'>
                         {project.design}
                       </p>
-                      <img src = {project.video} className = 'desciption-gif' autoPlay = {window.innerWidth < 450}/>
+                      <video src = {project.video} className = 'desciption-gif' autoPlay = {window.innerWidth < 450}/>
                     </div>
                   </CSSTransition>
                   <p className = 'dropdown-sigil' onClick = {() => this.handleLink(project.id)}>
