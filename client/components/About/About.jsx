@@ -7,7 +7,7 @@ class About extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      about: true,
+      about: false,
       contact: false
     }
     this.handleAbout = this.handleAbout.bind(this)
@@ -42,7 +42,7 @@ class About extends React.Component {
         >
           <div className = 'about-div'>
             <p className = 'about-content'>
-            Hey there, welcome to my site! I&#8217;m Tim, a Freelance Web Developer who&#8217;s pretty keen to get my name out into the world and start creating for interesting people in interesting places. I&#8217;ve been through a fullstack development bootcamp in Auckland, NZL, and I&#8217;ve been able to use those skill to make the projects you can see on the left of your screen as well as a bunch more that you can see on my Github profile. Below you&#8217;ll find links to that, as well as my linkedIn profile and further contact details. Please feel free to get in touch! I would love to hear from you!
+            Hey there, welcome to my site! I&#8217;m Tim, a Freelance Web Developer who&#8217;s pretty keen to get my name out into the world and start creating for interesting people in interesting places. I&#8217;ve been through a fullstack development bootcamp in Auckland, New Zealand, and I&#8217;ve been able to use those skills to make the projects you can see on the left of your screen as well as a bunch more that you can see on see on my Github profile below, along with my LinkedIn profile and other contact details. Please feel free to get in touch! I would love to hear from you!
             </p>
             <p className = 'cv-link'>
               <a href="/docs/freelance-cv.pdf" download="Timothy-Tolley-CV" className = 'press-kit-link'>

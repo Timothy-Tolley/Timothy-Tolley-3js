@@ -30813,7 +30813,7 @@ var About = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this, props));
 
     _this.state = {
-      about: true,
+      about: false,
       contact: false
     };
     _this.handleAbout = _this.handleAbout.bind(_this);
@@ -30860,7 +30860,7 @@ var About = function (_React$Component) {
             _react2.default.createElement(
               'p',
               { className: 'about-content' },
-              'Hey there, welcome to my site! I\u2019m Tim, a Freelance Web Developer who\u2019s pretty keen to get my name out into the world and start creating for interesting people in interesting places. I\u2019ve been through a fullstack development bootcamp in Auckland, NZL, and I\u2019ve been able to use those skill to make the projects you can see on the left of your screen as well as a bunch more that you can see on my Github profile. Below you\u2019ll find links to that, as well as my linkedIn profile and further contact details. Please feel free to get in touch! I would love to hear from you!'
+              'Hey there, welcome to my site! I\u2019m Tim, a Freelance Web Developer who\u2019s pretty keen to get my name out into the world and start creating for interesting people in interesting places. I\u2019ve been through a fullstack development bootcamp in Auckland, New Zealand, and I\u2019ve been able to use those skills to make the projects you can see on the left of your screen as well as a bunch more that you can see on see on my Github profile below, along with my LinkedIn profile and other contact details. Please feel free to get in touch! I would love to hear from you!'
             ),
             _react2.default.createElement(
               'p',
