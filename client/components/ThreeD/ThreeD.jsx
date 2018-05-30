@@ -106,8 +106,8 @@ class ThreeD extends Component {
     video.muted = 'muted'
     const videoTexture = new THREE.VideoTexture(video)
     videoTexture.generateMipmaps = false
-    videoTexture.minFilter = THREE.LinearFilter
-    videoTexture.magFilter = THREE.LinearFilter
+    videoTexture.minFilter = THREE.NearestFilter
+    videoTexture.magFilter = THREE.NearestFilter
     videoTexture.format = THREE.RGBFormat
     this.movieMaterial = new THREE.MeshPhongMaterial({map: videoTexture, overdraw: true, side: THREE.DoubleSide})
     this.movieMaterial.map.needsUpdate = true
@@ -157,8 +157,10 @@ class ThreeD extends Component {
     if (this.props.video !== nextProps.video) {
       this.video.src = nextProps.video
       this.video.play()
-      this.screenMesh.material = this.movieMaterial
-      this.screenMesh.needsUpdate = true
+      setTimeout(() => {
+        this.screenMesh.material = this.movieMaterial
+        this.screenMesh.needsUpdate = true
+      }, 500)
     }
   }
 

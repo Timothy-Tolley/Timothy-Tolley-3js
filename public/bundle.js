@@ -31844,8 +31844,8 @@ var ThreeD = function (_Component) {
       video.muted = 'muted';
       var videoTexture = new THREE.VideoTexture(video);
       videoTexture.generateMipmaps = false;
-      videoTexture.minFilter = THREE.LinearFilter;
-      videoTexture.magFilter = THREE.LinearFilter;
+      videoTexture.minFilter = THREE.NearestFilter;
+      videoTexture.magFilter = THREE.NearestFilter;
       videoTexture.format = THREE.RGBFormat;
       this.movieMaterial = new THREE.MeshPhongMaterial({ map: videoTexture, overdraw: true, side: THREE.DoubleSide });
       this.movieMaterial.map.needsUpdate = true;
@@ -31895,11 +31895,15 @@ var ThreeD = function (_Component) {
   }, {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
+      var _this2 = this;
+
       if (this.props.video !== nextProps.video) {
         this.video.src = nextProps.video;
         this.video.play();
-        this.screenMesh.material = this.movieMaterial;
-        this.screenMesh.needsUpdate = true;
+        setTimeout(function () {
+          _this2.screenMesh.material = _this2.movieMaterial;
+          _this2.screenMesh.needsUpdate = true;
+        }, 500);
       }
     }
   }, {
@@ -31957,12 +31961,12 @@ var ThreeD = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
       return _react2.default.createElement('div', { className: 'canvasDiv',
         style: { width: '600px', height: '600px' },
         ref: function ref(mount) {
-          _this2.mount = mount;
+          _this3.mount = mount;
         }
       });
     }
