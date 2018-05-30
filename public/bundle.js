@@ -31841,7 +31841,6 @@ var ThreeD = function (_Component) {
       var video = document.createElement('video');
       video.setAttribute('crossorigin', 'anonymous');
       video.load();
-      video.play();
       video.muted = 'muted';
       var videoTexture = new THREE.VideoTexture(video);
       videoTexture.generateMipmaps = false;

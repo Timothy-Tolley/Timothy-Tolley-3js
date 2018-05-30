@@ -103,7 +103,6 @@ class ThreeD extends Component {
     const video = document.createElement('video')
     video.setAttribute('crossorigin', 'anonymous')
     video.load()
-    video.play()
     video.muted = 'muted'
     const videoTexture = new THREE.VideoTexture(video)
     videoTexture.generateMipmaps = false
