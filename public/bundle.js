@@ -31842,6 +31842,7 @@ var ThreeD = function (_Component) {
       video.setAttribute('crossorigin', 'anonymous');
       video.load();
       video.play();
+      video.muted = 'muted';
       var videoTexture = new THREE.VideoTexture(video);
       videoTexture.generateMipmaps = false;
       videoTexture.minFilter = THREE.LinearFilter;
