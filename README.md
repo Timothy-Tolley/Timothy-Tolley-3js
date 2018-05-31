@@ -16,19 +16,15 @@ Three.js
 
 React-transition-group
 
+    To run this locally: 
 
+    git clone
 
-To run this locally: 
+    run: yarn/ npm install
 
-git clone
+    run: yarn dev 
 
-run: yarn/ npm install
-
-run: yarn dev 
-
-go to localhost:3000
-
-
+    go to localhost:3000
 
 
 Still to work on: 
