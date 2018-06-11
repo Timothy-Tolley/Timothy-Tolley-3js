@@ -2,7 +2,7 @@ export const projects = [
   {
     name: 'Retail Path Finder',
     id: 1,
-    description: 'A fullstack JavaScript based interactive web application. Find your career path from retail worker to CEO. A fully customisable framework that can be easily customised to suit any click through path finding application.',
+    description: 'A fullstack JavaScript based interactive web application. Fully responsive. Find your career path from retail worker to CEO. A fully customisable framework that can be easily customised to suit any click through path finding application.',
     hosting: 'Heroku',
     build: 'Build: Timothy Tolley Freelance',
     design: 'Design: New Territory Studio',
@@ -13,7 +13,7 @@ export const projects = [
   {
     name: 'Deltage',
     id: 2,
-    description: "A fullstack Web Appication built in a week in a team of five. The app's purpose is to uncover cryptocurrency arbitrage opportunities. Login: deltage, Password: delta",
+    description: "A fullstack responsive web appication built in a week in a team of five. The app's purpose is to uncover cryptocurrency arbitrage opportunities. Login: deltage, Password: delta",
     hosting: 'Heroku',
     build: 'Build: Timothy Tolley w/ Adam Kuhn, Maddie Brighouse, Peter Sim, Tyler Griffin',
     design: 'Design: Combined Effort of the team',
@@ -24,7 +24,7 @@ export const projects = [
   {
     name: 'Thorn Tree Ltd',
     id: 3,
-    description: 'A fullstack Webpage. Built as a point of contact for Thorn Tree ltd to reach clients.',
+    description: 'A fullstack, fully responsive webpage. Built as a point of contact for Thorn Tree ltd to reach clients.',
     hosting: 'Heroku',
     build: 'Build: Timothy Tolley Freelance',
     design: 'Design: Timothy Tolley Freelance',
@@ -35,7 +35,7 @@ export const projects = [
   {
     name: 'Baby?',
     id: 4,
-    description: "A fullstack Webpage. Built as promotional material for a short film - 'Baby?'. Image heavy paralax design intended to show off some of the stunning imagery from the film.",
+    description: "A fullstack fully responsive webpage. Built as promotional material for a short film - 'Baby?'. Image heavy paralax design intended to show off some of the stunning imagery from the film.",
     hosting: 'Heroku',
     build: 'Build: Timothy Tolley Freelance',
     design: 'Design: Timothy Tolley Freelance',
