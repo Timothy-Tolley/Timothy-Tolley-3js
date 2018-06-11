@@ -24,7 +24,7 @@ export const projects = [
   {
     name: 'Thorn Tree Ltd',
     id: 3,
-    description: 'A fullstack Webpage. WORK IN PROGRESS Built as a point of contact for Thorn Tree ltd to reach clients.',
+    description: 'A fullstack Webpage. Built as a point of contact for Thorn Tree ltd to reach clients.',
     hosting: 'Heroku',
     build: 'Build: Timothy Tolley Freelance',
     design: 'Design: Timothy Tolley Freelance',
@@ -35,7 +35,7 @@ export const projects = [
   {
     name: 'Baby?',
     id: 4,
-    description: "A fullstack Webpage. WORK IN PROGRESS. Built as promotional material for a Short Film - 'Baby?'.",
+    description: "A fullstack Webpage. Built as promotional material for a short film - 'Baby?'. Image heavy paralax design intended to show off some of the stunning imagery from the film.",
     hosting: 'Heroku',
     build: 'Build: Timothy Tolley Freelance',
     design: 'Design: Timothy Tolley Freelance',
@@ -46,7 +46,7 @@ export const projects = [
   {
     name: 'Timothy Tolley Freelance',
     id: 5,
-    description: 'A fullstack Web Appication utilising Three.js. Built as a point of contact for Timothy Tolley Freelance to reach clients and show off what we can do for you.',
+    description: 'A fullstack Web Appication utilising Three.js. Built as a point of contact for Timothy Tolley Freelance to reach clients and show off what I can do for you.',
     hosting: 'Heroku',
     build: 'Build: Timothy Tolley Freelance',
     design: 'Design: Timothy Tolley Freelance',
