@@ -31836,6 +31836,8 @@ var ThreeD = function (_Component) {
       var regMaterial = new THREE.MeshPhongMaterial({ color: '#555F61', shininess: 100 });
       var planeMaterial = new THREE.MeshPhongMaterial({ color: 'black', shininess: 30 });
       var regScreenMaterial = new THREE.MeshPhongMaterial({ color: '#242836', shininess: 200 });
+      var screenImage = new THREE.TextureLoader().load('/images/screenImage.jpg');
+      this.screenTexture = new THREE.MeshBasicMaterial({ map: screenImage });
 
       // Video texture
       var video = document.createElement('video');
@@ -31928,7 +31930,7 @@ var ThreeD = function (_Component) {
       if (this.props.videoActive) {
         mat = this.movieMaterial;
       } else {
-        mat = this.regScreenMaterial;
+        mat = this.screenTexture;
       }
       this.screenMesh = new THREE.Mesh(geometry, mat);
       this.screenMesh.castShadow = true;

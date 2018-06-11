@@ -98,6 +98,8 @@ class ThreeD extends Component {
     const regMaterial = new THREE.MeshPhongMaterial({color: '#555F61', shininess: 100})
     const planeMaterial = new THREE.MeshPhongMaterial({color: 'black', shininess: 30})
     const regScreenMaterial = new THREE.MeshPhongMaterial({color: '#242836', shininess: 200})
+    const screenImage = new THREE.TextureLoader().load('/images/screenImage.jpg')
+    this.screenTexture = new THREE.MeshBasicMaterial({map: screenImage})
 
     // Video texture
     const video = document.createElement('video')
@@ -182,7 +184,7 @@ class ThreeD extends Component {
     if (this.props.videoActive) {
       mat = this.movieMaterial
     } else {
-      mat = this.regScreenMaterial
+      mat = this.screenTexture
     }
     this.screenMesh = new THREE.Mesh(geometry, mat)
     this.screenMesh.castShadow = true
