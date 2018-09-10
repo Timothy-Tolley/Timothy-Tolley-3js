@@ -45,8 +45,13 @@ class About extends React.Component {
             Hey there, welcome to my site! I&#8217;m Tim, a Freelance Web Developer who&#8217;s pretty keen to get my name out into the world and start creating for interesting people in interesting places. I&#8217;ve been through a fullstack development bootcamp in Auckland, New Zealand, and I&#8217;ve been able to use those skills to make the projects you can see on the left of your screen as well as a bunch more that you can see on see on my Github profile below, along with my LinkedIn profile and other contact details. Please feel free to get in touch! I would love to hear from you!
             </p>
             <p className = 'cv-link'>
-              <a href="/docs/freelance-cv.pdf" download="Timothy-Tolley-CV" className = 'press-kit-link'>
-            Downloadable CV
+              <a href="/docs/freelance-cv-long.pdf" download="Timothy-Tolley-CV" className = 'press-kit-link'>
+            Download Long Résumé
+              </a>
+            </p>
+            <p className = 'cv-link'>
+              <a href="/docs/freelance-cv-short.pdf" download="Timothy-Tolley-CV-Short" className = 'press-kit-link'>
+            Download Short Résumé
               </a>
             </p>
           </div>
