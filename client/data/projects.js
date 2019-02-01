@@ -18,7 +18,7 @@ export const projects = [
     build: 'Build: Timothy Tolley w/ Adam Kuhn, Maddie Brighouse, Peter Sim, Tyler Griffin',
     design: 'Design: Combined Effort of the team',
     link: 'https://deltage.nz',
-    tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'Three.js', 'React-Chart.js'],
+    tech: ['React.js', 'Node.js', ' Express.js', 'JavaScript', 'React-Chart.js'],
     video: '/gifs/deltage-gif.mp4'
   },
   {
